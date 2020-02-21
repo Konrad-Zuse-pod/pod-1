@@ -8,13 +8,13 @@
 
 // SOLUTION //
 
-// function wordLengths(array){
-//     var arrayLength = [];
-//     for (var i = 0; i < array.length; i++){
-//         arrayLength.push(array[i].length)
-//     }
-//     return arrayLength;
-// }
+function wordLengths(array){
+    var arrayLength = [];
+    for (var i = 0; i < array.length; i++){
+        arrayLength.push(array[i].length)
+    }
+    return arrayLength;
+}
 
 
 // SOLUTION 2 //
@@ -22,8 +22,7 @@
 // const wordLengths = arr => arr.map(word => word.length);
 
 
-
-// console.log(wordLengths(["hello", "how", "are", "you", "doing?"]));
+console.log(wordLengths(["hello", "how", "are", "you", "doing?"]));
 // Should return [5, 3, 3, 3, 6] //
 
 // END SOLUTIONS //
@@ -65,27 +64,28 @@
 
 // SOLUTION //
 
+function phoneticLookup(input) {
+    var result = "";
+    var val = input.toLowerCase();
+    // Only change code below this line
+    var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank",
+    };
+    console.log(lookup[val]);
+    // Only change code above this line
+    return result;
+}
 
-// // Setup
-// function phoneticLookup(val) {
-//     var result = "";
-//
-//     // Only change code below this line
-//     var lookup = {
-//         "alpha": "Adams",
-//         "bravo": "Boston",
-//         "charlie": "Chicago",
-//         "delta": "Denver",
-//         "echo": "Easy",
-//         "foxtrot": "Frank",
-//     };
-//     return lookup[val];
-//     // Only change code above this line
-//     return result;
-// }
-//
-// // Change this value to test
-// phoneticLookup("charlie");
+// Change this value to test
+phoneticLookup("charlie");
+phoneticLookup("alpha");
+phoneticLookup("delta");
+
 
 // END SOLUTION //
 
@@ -95,15 +95,18 @@
 
 // SOLUTION //
 
-// function noOdds(arr) {
-//     var bucket = [];
-//     for (var i = 0; i < arr.length; i++){
-//         if (arr[i] % 2 === 0) {
-//             bucket.push(arr[i]);
-//         }
-//     }
-//     return bucket;
-// }
+function noOdds(arr) {
+    var bucket = [];
+    for (var i = 0; i < arr.length; i++){
+        if (arr[i] % 2 === 0) {
+            bucket.push(arr[i]);
+        }
+    }
+    console.log(bucket);
+}
+noOdds([1, 2, 3, 4, 5, 6, 7, 8]);
+noOdds([43, 65, 23, 89, 53, 9, 6]);
+noOdds([718, 991, 449, 644, 380, 440]);
 
 // END SOLUTION //
 
