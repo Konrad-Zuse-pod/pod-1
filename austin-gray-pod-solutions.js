@@ -14,12 +14,14 @@
 // }
 
 
+    // Shorthand //
+
 // const wordLengths = arr => arr.map(word => word.length);
 
 
 
 console.log(wordLengths(["hello", "how", "are", "you", "doing?"]));
-// Should return [5, 3, 3, 3, 5] //
+// Should return [5, 3, 3, 3, 6] //
 
 
 
