@@ -136,3 +136,17 @@ function minMax(arr) {
 // Test.assertSimilar(minMax([-54, -23, -54, -21]), [-54, -21])
 // Test.assertSimilar(minMax([-0.473, -0.6834, -0.1287, 0.5632]), [-0.6834, 0.5632])
 // Test.assertSimilar(minMax([0, 0, 0, 0]), [0, 0])
+
+
+// Write a function to check if an array contains a particular number.
+
+function check(arr, el) {
+    return arr.includes(el);
+}
+
+// Test.assertEquals(check([1, 2, 3, 4, 5], 3), true)
+// Test.assertEquals(check([1, 1, 2, 1, 1], 3), false)
+// Test.assertEquals(check([1, 1, 2, 1, 5, 4, 7], 7), true)
+// Test.assertEquals(check([1, 1, 2, 1, 5, 4, 7], 8), false)
+// Test.assertEquals(check([5, 5, 5, 6], 5), true)
+// Test.assertEquals(check([], 5), false)
