@@ -166,38 +166,70 @@
 
 // Only change code below this line
 
-var total = 0;
-for(var i = 0; i < myArr.length; i++){
-    total += myArr[i];
-}
+// var total = 0;
+// for(var i = 0; i < myArr.length; i++){
+//     total += myArr[i];
+// }
 
 //2 Manipulate Arrays With push()
 // Push ["dog", 3] onto the end of the myArray variable.
 
 
 // Example
-var ourArray = ["Stimpson", "J", "cat"];
-ourArray.shift(); // ourArray now equals ["J", "cat"]
-ourArray.unshift("Happy");
-// ourArray now equals ["Happy", "J", "cat"]
+// var ourArray = ["Stimpson", "J", "cat"];
+// ourArray.shift(); // ourArray now equals ["J", "cat"]
+// ourArray.unshift("Happy");
+// // ourArray now equals ["Happy", "J", "cat"]
+//
+// // Setup
+// var myArray = [["John", 23], ["dog", 3]];
+// myArray.shift();
+//
+// // Only change code below this line.
+// myArray.unshift(["Paul", 35]);
+//
+// //3 Manipulate Arrays With shift()
+// // Use the .shift() function to remove the first item from myArray, assigning the "shifted off" value to removedFromMyArray.
+//
+// // Example
+// var ourArray = ["Stimpson", "J", ["cat"]];
+// var removedFromOurArray = ourArray.shift();
+// // removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+//
+// // Setup
+// var myArray = [["John", 23], ["dog", 3]];
+//
+// // Only change code below this line.
+// var removedFromMyArray;
 
-// Setup
-var myArray = [["John", 23], ["dog", 3]];
-myArray.shift();
 
-// Only change code below this line.
-myArray.unshift(["Paul", 35]);
+//---------------------------Object----------------------------??
+var john = { // variable that stores an object
+    "name": "johny bones jones",
+    "age": 31,
+    "profession": "UFC fighter",
+    "hobbies": ["chess", "snooker", "fighting"] // a value can be an array inside of the object
+};
+console.log(john);
 
-//3 Manipulate Arrays With shift()
-// Use the .shift() function to remove the first item from myArray, assigning the "shifted off" value to removedFromMyArray.
 
-// Example
-var ourArray = ["Stimpson", "J", ["cat"]];
-var removedFromOurArray = ourArray.shift();
-// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+//---------------------Query Selector---------------------------//
+var titles = document.querySelectorAll('.title');
+console.log(titles);// gives us a node list which is similar to a collection, except we can actually run array functions on a node list!!!
+titles[0].textContent = 'Hello';// how we access those node
 
-// Setup
-var myArray = [["John", 23], ["dog", 3]];
+var odd = document.querySelectorAll('li:nth-child(odd)');// nth-child is a .css selector
+var even = document.querySelectorAll('li:nth-chile(even)');// for all the evens
 
-// Only change code below this line.
-var removedFromMyArray;
+for (var i = 0; i < odd.length; i++){
+    odd[i].style.backgroundColor = '#f4f4f4';//changes all the odd numbers to lightgrey
+    even[i].style.backgroundColor = '#ccc';//changes all the even numbers to darkgrey
+};
+
+//--------------------Get Elements by Class Name------------------//
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);// It gives us an HTMLCollection and each one has an index [0], [1], [2], etc..
+console.log(items[1]);// used to access individual items (item 2)
+items[1].textContent = 'Hello 2';// changes the text in the actual item index (2nd one)
+items[1].style.fontWeight = 'bold';// changes the style of the text on that index item
+items[1].style.backgroundColor = 'yellow';// changes the background color to 'yellow'
