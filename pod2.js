@@ -1,4 +1,6 @@
+
 //1. Ex: function should check if nums exist in num?
+
 
 // function doesExist(nums, num){
 //     for (var i = 0; i < nums.length; i++){
@@ -166,16 +168,19 @@
 
 // Only change code below this line
 
-// var total = 0;
+
+  // var total = 0;
 // for(var i = 0; i < myArr.length; i++){
 //     total += myArr[i];
 // }
+
 
 //2 Manipulate Arrays With push()
 // Push ["dog", 3] onto the end of the myArray variable.
 
 
 // Example
+
 // var ourArray = ["Stimpson", "J", "cat"];
 // ourArray.shift(); // ourArray now equals ["J", "cat"]
 // ourArray.unshift("Happy");
@@ -233,3 +238,4 @@ console.log(items[1]);// used to access individual items (item 2)
 items[1].textContent = 'Hello 2';// changes the text in the actual item index (2nd one)
 items[1].style.fontWeight = 'bold';// changes the style of the text on that index item
 items[1].style.backgroundColor = 'yellow';// changes the background color to 'yellow'
+
